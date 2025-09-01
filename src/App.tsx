@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
@@ -17,6 +18,7 @@ function App() {
         <main className="flex-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutMe />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />

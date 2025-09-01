@@ -12,7 +12,9 @@ const profile: Profile = {
     medium: "https://medium.com/@anushkachary",
   },
   summary:
-    "Software Engineer with 7+ years leading full-stack and cloud-native solutions across eCommerce and legal tech.",
+    "Software Engineer with 7+ years of experience leading full-stack development and cloud-native solutions across eCommerce and legal tech. Proven" +
+"leader in driving technical strategy, mentoring teams, and delivering scalable systems using .NET, Java, Python, and Angular on Azure and AWS." +
+"Trusted to align engineering with business goals and deliver high-impact, production-ready products.",
   experience: [
     {
       title: "Software Developer — Admin Graduate Assistant",

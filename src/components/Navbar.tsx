@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 const routes = [
   { to: "/", label: "Home" },
+  { to: "/about", label: "About Me" },
   { to: "/experience", label: "Experience" },
   { to: "/projects", label: "Projects" },
   { to: "/skills", label: "Skills" },
@@ -24,7 +25,8 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900 backdrop-blur border-b">
       <nav className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link to="/" className="font-bold text-lg tracking-tight">
+        <Link to="/" className="flex items-center gap-2 font-bold text-lg tracking-tight">
+          <img src={require('../logo.png')} alt="Logo" className="h-8 w-8 rounded-full shadow" />
           Anushka Uppula
         </Link>
 

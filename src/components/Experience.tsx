@@ -1,31 +1,26 @@
 import Section from "./Section";
 import profile from "../data/profile";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+
 
 export default function Experience() {
   return (
     <Section title="Experience">
-      <VerticalTimeline>
+      <div className="grid gap-8 sm:grid-cols-2">
         {profile.experience.map((job, i) => (
-          <VerticalTimelineElement
-            key={i}
-            date={job.date}
-            iconStyle={{ background: "#2563eb", color: "#fff" }}
-          >
-            <h3 className="font-bold">{job.title}</h3>
-            <h4 className="text-slate-600">{job.company}</h4>
-            <ul className="mt-2 list-disc list-inside space-y-1">
+          <div key={i} className="bg-white border rounded-2xl shadow-sm p-6 flex flex-col h-full">
+            <div className="mb-2 flex flex-col gap-1">
+              <span className="text-blue-700 font-bold text-lg">{job.title}</span>
+              <span className="text-slate-600 font-medium">{job.company}</span>
+              <span className="text-xs text-slate-400">{job.date}</span>
+            </div>
+            <ul className="mt-2 list-disc list-inside space-y-1 text-slate-700">
               {job.bullets.map((b, j) => (
                 <li key={j}>{b}</li>
               ))}
             </ul>
-          </VerticalTimelineElement>
+          </div>
         ))}
-      </VerticalTimeline>
+      </div>
     </Section>
   );
 }
