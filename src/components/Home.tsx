@@ -33,13 +33,7 @@ export default function Home() {
             />
           </p>
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 text-slate-600 text-lg mb-2">
-            <span className="flex items-center gap-1"><MapPin size={20} className="text-blue-500" /> {profile.location}</span>
-            <span className="mx-2">•</span>
-            <span className="flex items-center gap-1"><Mail size={20} className="text-purple-500" />
-              <a className="underline hover:text-blue-700 transition" href={`mailto:${profile.email}`}>
-                {profile.email}
-              </a>
-            </span>
+            <span className="flex items-center gap-1"><MapPin size={20} className="text-blue-500" /> {profile.location}</span>            
           </div>
         </div>
       </div>

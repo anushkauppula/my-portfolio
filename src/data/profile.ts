@@ -22,8 +22,12 @@ const profile: Profile = {
       location: "Maryville, MO",
       date: "Oct 2024 – Dec 2025 (Expected)",
       bullets: [
-        "Led a team of 8 developers to enhance textbook apps.",
-        "Built Auto-Enroll app reducing manual effort by 80%.",
+        "Led a team of 8 developers to enhance the Online Professional & Supplemental Textbook Finder applications used by 30+ faculty members, to " +
+"manage more than 1,000 online students in an Agile team-based environment.",
+"Developed and deployed an Auto-Enroll application used by 30+ faculty to digitally select courses for upcoming semesters, automating PDF " +
+"generation and email submission to the registrar, reducing manual effort and email traffic by over 80% while improving system efficiency" +
+"and stability.",
+"Applied API design best practices and implemented maintainable, testable components for seamless integration across platforms."
       ],
     },
     {
@@ -31,10 +35,43 @@ const profile: Profile = {
       company: "Quick Job Manager",
       date: "Jul 2023 – May 2024",
       bullets: [
-        "Boosted engagement by 20% through UX improvements.",
-        "Migrated REST to GraphQL reducing over-fetching by 40%.",
+        "Angular, HTML, and SCSS, and improving overall user experience.",
+"Migrated REST APIs to GraphQL, reducing over-fetching by approximately 40% and improving performance and scalability of client " +
+"applications.",
+"Implemented monitoring and proactive optimizations to sustain system performance under growing traffic."
       ],
     },
+    {
+      title: "Software Engineer",
+      company: "RS Americas",
+      date: "Jul 2022 - Jun 2023",
+      bullets: [
+        "Independently developed and delivered key modules for internal sales applications, reducing a long-running SQL query from few minutes to " +
+"a second, increasing sales productivity.",
+"Demonstrated expertise in C#, .NET, and frontend technologies (Angular, Vue.js) by consistently building scalable, user-friendly interfaces " +
+"aligned with business requirements.",
+"Actively contributed to team success by assisting peers with debugging and solution design, fostering a collaborative and knowledge-sharing " +
+"environment."
+      ],
+    },
+    {
+      title: "Engineer",
+      company: "LTI Mindtree Ltd",
+      date: "Jun 2022 - Jul 2022",
+      bullets: [
+        "Familiar with Azure Files, Blob Storage, and Azure Queues for cloud-based storage and messaging through exploratory project involvement."
+      ],
+    },
+    {
+      title: "Software Engineer",
+      company: "Seguro Soft Technologies Pvt Limited",
+      date: "May 2017 - Mar 2021",
+      bullets: [
+        "Performed R&D and developed a dynamic vector map feature using Mapael (jQuery plugin) to visualize migration flows between cities.",
+"Led the migration from VB.NET and ASP.NET to MVC, improving UX and increasing engagement by 25% and revenue by 20%.",
+"Mentored junior engineers on scalable system design and test-driven practices, improving team delivery standards."
+      ],
+    }
   ],
   projects: [
     {
@@ -55,14 +92,21 @@ const profile: Profile = {
     },
   ],
   skills: {
-    languages: ["C#", "Java", "Python", "SQL", "TypeScript", "JavaScript"],
-    frontend: ["React", "Angular", "Vue.js", "HTML", "CSS", "Bootstrap"],
-    backend: [".NET Core", "Spring Boot", "GraphQL", "Web API"],
-    databases: ["SQL Server", "MySQL", "PostgreSQL", "MongoDB", "Pinecone"],
-    cloud: ["Azure", "AWS"],
-    devops: ["Docker", "Azure DevOps", "GitLab CI/CD"],
-    tools: ["VS", "VSCode", "Android Studio", "GitHub", "GitLab"],
-  },
+  "languages": ["C#", "Java", "Python", "SQL", "TypeScript", "JavaScript"],
+  "frameworks_and_libraries": [
+    ".NET Framework", ".NET Core", "ASP.NET MVC", "ASP.NET Core", 
+    "Entity Framework", "ADO.NET", "Dapper", "Web API", "GraphQL", "Spring Boot"
+  ],
+  "frontend": ["HTML", "CSS", "Bootstrap", "Angular", "Vue.js", "React", "jQuery", "Kendo UI"],
+  "databases": ["SQL Server", "MySQL", "PostgreSQL", "MongoDB", "Pinecone"],
+  "cloud_platforms": ["Microsoft Azure", "AWS"],
+  "revision_control": ["GitHub", "GitLab", "SVN (TortoiseSVN)"],
+  "devops_and_containerization": ["Docker", "GitLab CI/CD", "Azure DevOps"],
+  "monitoring_and_logging_tools": ["Grafana", "Akamai", "SonarQube", "SEQ"],
+  "security_protocols": ["OAuth2", "LDAP", "JWT", "OWASP", "Role-based Access Control (RBAC)"],
+  "ides_and_development_tools": ["Visual Studio", "Visual Studio Code", "NetBeans", "Eclipse", "Android Studio"],
+  "work_management_tools": ["JIRA", "Assembla", "Azure DevOps", "GitHub"]
+},
   leadership: [
     "Led team of 8 devs to enhance textbook systems.",
     "Mentored interns on .NET best practices.",
@@ -81,7 +125,7 @@ const profile: Profile = {
       degree: "M.S., Applied Computer Science (GPA 4.0)",
       school: "Northwest Missouri State University",
       date: "Dec 2025 (Expected)",
-      coursework: ["Advanced DB", "Mobile Computing", "Generative AI"],
+      coursework: ["Advanced DB", "Mobile Computing - Android", "Generative AI", "Big Data", "Patterns & Frameworks"],
     },
   ],
 };

@@ -5,7 +5,7 @@ import profile from "../data/profile";
 export default function Experience() {
   return (
     <Section title="Experience">
-      <div className="grid gap-8 sm:grid-cols-2">
+  <div className="flex flex-col gap-8">
         {profile.experience.map((job, i) => (
           <div key={i} className="bg-white border rounded-2xl shadow-sm p-6 flex flex-col h-full">
             <div className="mb-2 flex flex-col gap-1">

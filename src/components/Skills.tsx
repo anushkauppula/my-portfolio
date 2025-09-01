@@ -1,38 +1,44 @@
 import Section from "./Section";
 import profile from "../data/profile";
-import { useSpring, animated } from "react-spring";
+import { Code, Layers, Database, Cloud, Settings, Wrench } from "lucide-react";
 
-interface BarProps {
-  skill: string;
-  level: number; // % 0–100
-}
+const icons: Record<string, React.ReactNode> = {
+  languages: <Code className="inline-block mr-2 text-blue-500" size={20} />,
+  frontend: <Layers className="inline-block mr-2 text-pink-500" size={20} />,
+  backend: <Settings className="inline-block mr-2 text-purple-500" size={20} />,
+  databases: <Database className="inline-block mr-2 text-green-500" size={20} />,
+  cloud: <Cloud className="inline-block mr-2 text-cyan-500" size={20} />,
+  devops: <Wrench className="inline-block mr-2 text-yellow-500" size={20} />,
+  tools: <Wrench className="inline-block mr-2 text-gray-500" size={20} />,
+};
 
-function SkillBar({ skill, level }: BarProps) {
-  const props = useSpring({ width: `${level}%`, from: { width: "0%" } });
-  return (
-    <div className="mb-4">
-      <div className="flex justify-between">
-        <span>{skill}</span>
-        <span>{level}%</span>
-      </div>
-      <div className="w-full bg-slate-200 h-2 rounded">
-        <animated.div
-          className="h-2 rounded bg-blue-600"
-          style={props}
-        />
-      </div>
-    </div>
-  );
+function formatKey(key: string) {
+  return key
+    .replace(/_/g, ' ')
+    .replace(/\b\w/g, l => l.toUpperCase());
 }
 
 export default function Skills() {
   return (
-    <Section title="Skills (Highlights)">
-      <SkillBar skill="C#" level={90} />
-      <SkillBar skill="Java" level={85} />
-      <SkillBar skill="Python" level={80} />
-      <SkillBar skill="React" level={75} />
-      <SkillBar skill="Azure/AWS" level={70} />
+    <Section title="Skills">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {Object.entries(profile.skills).map(([key, arr]) => (
+          Array.isArray(arr) ? (
+            <div key={key} className="bg-white rounded-2xl shadow-md border border-slate-100 p-6 flex flex-col">
+              <h3 className="font-bold text-lg mb-3 flex items-center">
+                {icons[key] || <Wrench className="inline-block mr-2 text-slate-400" size={20} />} {formatKey(key)}
+              </h3>
+              <ul className="flex flex-wrap gap-2 mt-2">
+                {arr.map((item: string) => (
+                  <li key={item} className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium shadow-sm">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null
+        ))}
+      </div>
     </Section>
   );
 }
