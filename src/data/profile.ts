@@ -123,11 +123,17 @@ const profile: Profile = {
   presentations: ["Presented Fresh Track app at CCSC Conference, Iowa."],
   education: [
     {
-      degree: "M.S., Applied Computer Science (GPA 4.0)",
+      degree: "M.S., Applied Computer Science",
       school: "Northwest Missouri State University",
       date: "Dec 2025 (Expected)",
       coursework: ["Advanced DB", "Mobile Computing - Android", "Generative AI", "Big Data", "Patterns & Frameworks"],
     },
+    {
+      degree: "Bachelor of Technology, Electronics & Instrumentation Engineering",
+      school: "GITAM University, India",
+      date: "",
+      coursework: ["C", "C++", "Data Structures & Algorithms"],
+    }
   ],
 };
 
