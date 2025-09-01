@@ -30,7 +30,7 @@ export interface Profile {
     github: string;
     medium: string;
   };
-  summary: string;
+  summary: string[];
   experience: Job[];
   projects: Project[];
   skills: Record<string, string[]>;

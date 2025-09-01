@@ -11,10 +11,11 @@ const profile: Profile = {
     github: "https://github.com/anushkauppula",
     medium: "https://medium.com/@anushkachary",
   },
-  summary:
-    "Software Engineer with 7+ years of experience leading full-stack development and cloud-native solutions across eCommerce and legal tech. Proven" +
-"leader in driving technical strategy, mentoring teams, and delivering scalable systems using .NET, Java, Python, and Angular on Azure and AWS." +
-"Trusted to align engineering with business goals and deliver high-impact, production-ready products.",
+  summary: [
+    "I am a Software Engineer with 7+ years of experience in designing and delivering full-stack applications and cloud-native solutions, specializing in the eCommerce and legal tech domains. My expertise spans modern development frameworks and scalable architectures, enabling me to build reliable, production-ready systems that align with evolving business needs.",
+    "As a proven technical leader, I have successfully driven engineering strategy, mentored cross-functional teams, and championed best practices across the software development lifecycle. My background includes hands-on experience with .NET, Java, Python, Angular, and microservices, combined with strong proficiency in leveraging Azure and AWS for cloud deployment.",
+    "I am trusted for my ability to bridge technology and business, ensuring projects deliver measurable impact and long-term value. With a focus on scalability, performance, and collaboration, I am committed to creating solutions that not only meet current requirements but also anticipate future growth."
+  ],
   experience: [
     {
       title: "Software Developer — Admin Graduate Assistant",
