@@ -1,5 +1,4 @@
 // AboutMe.tsx
-import Section from "./Section";
 import profile from "../data/profile";
 
 export default function AboutMe() {

@@ -1,7 +1,4 @@
-import Section from "./Section";
 import profile from "../data/profile";
-import { MapPin, Mail } from "lucide-react";
-import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
