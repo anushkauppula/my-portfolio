@@ -1,7 +1,7 @@
 import { Profile } from "../types";
 
 const profile: Profile = {
-  name: "Anushka Uppula",
+  name: "Anushka",
   role: "Software Engineer",
   location: "Maryville, MO",
   email: "anushkauppula95@gmail.com",
