@@ -1,3 +1,5 @@
 - npm install
 - npm install react react-dom react-router-dom tailwindcss postcss autoprefixer lucide-react react-vertical-timeline-component react-simple-typewriter react-spring
 - npm install --save-dev @types/react @types/react-dom @types/react-router-dom
+
+- https://anushkauppula.netlify.app/
