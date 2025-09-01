@@ -1,24 +1,30 @@
+
 import Section from "./Section";
 import profile from "../data/profile";
+import { Briefcase } from "lucide-react";
 
 
 export default function Experience() {
   return (
     <Section title="Experience">
-  <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8">
         {profile.experience.map((job, i) => (
-          <div key={i} className="bg-white border rounded-2xl shadow-sm p-6 flex flex-col h-full">
-            <div className="mb-2 flex flex-col gap-1">
-              <span className="text-blue-700 font-bold text-lg">{job.title}</span>
-              <span className="text-slate-600 font-medium">{job.company}</span>
-              <span className="text-xs text-slate-400">{job.date}</span>
+          <article
+            key={i}
+            className="bg-gradient-to-br from-yellow-50 via-pink-50 to-slate-100 border border-yellow-200 rounded-2xl shadow-lg p-6"
+          >
+            <div className="flex items-center gap-3 mb-2">
+              <Briefcase className="text-yellow-600" size={22} />
+              <h3 className="text-lg font-bold text-yellow-700">{job.title}</h3>
             </div>
-            <ul className="mt-2 list-disc list-inside space-y-1 text-slate-700">
+            <div className="text-sm text-slate-700 mb-1 font-semibold">{job.company}</div>
+            <div className="text-xs text-slate-500 mb-2">{job.date}</div>
+            <ul className="list-disc list-inside space-y-1 text-slate-700">
               {job.bullets.map((b, j) => (
                 <li key={j}>{b}</li>
               ))}
             </ul>
-          </div>
+          </article>
         ))}
       </div>
     </Section>

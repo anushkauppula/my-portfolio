@@ -15,12 +15,6 @@ const routes = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [dark, setDark] = useState(false);
-
-  useEffect(() => {
-    if (dark) document.documentElement.classList.add("dark");
-    else document.documentElement.classList.remove("dark");
-  }, [dark]);
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900 backdrop-blur border-b">
@@ -44,12 +38,6 @@ export default function Navbar() {
               {r.label}
             </NavLink>
           ))}
-          <button
-            onClick={() => setDark(!dark)}
-            className="p-2 rounded-full bg-slate-200 dark:bg-slate-700"
-          >
-            {dark ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
         </div>
 
         <button className="sm:hidden p-2" onClick={() => setOpen(!open)}>

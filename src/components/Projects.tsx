@@ -37,20 +37,24 @@ export default function Projects() {
         ))}
       </div>
 
-      <div className="grid sm:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {filtered.map((p, i) => (
           <article
             key={i}
-            className="rounded-2xl border p-5 bg-white dark:bg-slate-800 shadow-sm"
+            className="bg-gradient-to-br from-green-50 via-blue-50 to-slate-100 border border-green-200 rounded-2xl shadow-lg p-6 flex flex-col h-full"
           >
-            <h3 className="text-lg font-semibold">{p.name}</h3>
-            <ul className="mt-2 list-disc list-inside space-y-1">
+            <h3 className="text-xl font-bold text-green-700 mb-2">{p.name}</h3>
+            <ul className="mt-2 list-disc list-inside space-y-1 text-slate-700">
               {p.bullets.map((b, j) => (
                 <li key={j}>{b}</li>
               ))}
             </ul>
-            <div className="mt-3 text-sm text-slate-600 dark:text-slate-300">
-              <span className="font-medium">Stack:</span> {p.stack.join(" • ")}
+            <div className="mt-4 flex flex-wrap gap-2">
+              {p.stack.map((tech) => (
+                <span key={tech} className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold shadow">
+                  {tech}
+                </span>
+              ))}
             </div>
           </article>
         ))}

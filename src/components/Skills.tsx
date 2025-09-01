@@ -24,13 +24,14 @@ export default function Skills() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {Object.entries(profile.skills).map(([key, arr]) => (
           Array.isArray(arr) ? (
-            <div key={key} className="bg-white rounded-2xl shadow-md border border-slate-100 p-6 flex flex-col">
+            <div key={key} className="bg-white border border-slate-200 rounded-2xl shadow-sm p-6 flex flex-col">
               <h3 className="font-bold text-lg mb-3 flex items-center">
-                {icons[key] || <Wrench className="inline-block mr-2 text-slate-400" size={20} />} {formatKey(key)}
+                {icons[key] || <Wrench className="text-slate-400 mr-2" size={20} />}
+                <span className="text-slate-700">{formatKey(key)}</span>
               </h3>
               <ul className="flex flex-wrap gap-2 mt-2">
                 {arr.map((item: string) => (
-                  <li key={item} className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium shadow-sm">
+                  <li key={item} className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
                     {item}
                   </li>
                 ))}
