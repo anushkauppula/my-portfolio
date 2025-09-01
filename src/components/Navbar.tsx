@@ -9,8 +9,8 @@ const routes = [
   { to: "/projects", label: "Projects" },
   { to: "/skills", label: "Skills" },
   { to: "/education", label: "Education" },
-  { to: "/awards", label: "Awards" },
-  { to: "/contact", label: "Contact" },
+  { to: "/achievements", label: "Achievements" },
+  // { to: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {

@@ -1,6 +1,47 @@
 import { Profile } from "../types";
 
 const profile: Profile = {
+  achievements: {
+    leadershipImpact: [
+      {
+        category: "Technical Leadership",
+        points: [
+          "Led a team of 8 developers to enhance university textbook systems supporting over 1,000 students, implementing Agile practices to deliver scalable, user-centric applications.",
+          "Mentored interns & junior developers on .NET best practices, improving overall development standards."
+        ]
+      },
+      {
+        category: "Revenue Generation",
+        points: [
+          "Migrated legacy systems from VB.NET/ASP.NET to MVC, resulting in a 25% increase in engagement and 20% revenue growth through improved user experience and performance."
+        ]
+      },
+      {
+        category: "Operational Efficiency",
+        points: [
+          "Automated faculty course selection with an Auto-Enroll application, reducing manual work and registrar email traffic by over 80%, streamlining academic operations."
+        ]
+      }
+    ],
+    honors: [
+      {
+        org: "Northwest Missouri State University",
+        points: [
+          "Received Full (100%) Academic Scholarship for Outstanding Performance."
+        ]
+      },
+      {
+        org: "Seguro Soft Technologies Pvt Limited",
+        points: [
+          "Recognized as the Best Employee in 2019 for resolving a site issue at the witching hour that saved the company from losing revenue.",
+          "Earned the Best Employee Award in 2018 for fixing a site breakdown in the dark that affected a huge user base."
+        ]
+      }
+    ],
+    presentations: [
+      "Presented the Fresh Track app at the CCSC Conference held in Des Moines, Iowa, showcasing innovative solutions in application development."
+    ]
+  },
   name: "Anushka",
   role: "Software Engineer",
   location: "Maryville, MO",

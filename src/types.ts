@@ -39,4 +39,15 @@ export interface Profile {
   awards: string[];
   presentations: string[];
   education: Education[];
+  achievements?: {
+    leadershipImpact: Array<{
+      category: string;
+      points: string[];
+    }>;
+    honors: Array<{
+      org: string;
+      points: string[];
+    }>;
+    presentations: string[];
+  };
 }
