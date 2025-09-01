@@ -18,6 +18,17 @@ function startApp() {
 // Dynamically load Tailwind CDN to ensure utility classes are available
 // even if PostCSS/Tailwind isn't wired in the local build environment.
 if (typeof document !== 'undefined') {
+  // Set tab title
+  document.title = 'Anushka Portfolio';
+  // Set favicon to logo.png
+  let favicon = document.querySelector("link[rel='icon']") as HTMLLinkElement;
+  if (!favicon) {
+    favicon = document.createElement('link') as HTMLLinkElement;
+    favicon.rel = 'icon';
+    document.head.appendChild(favicon);
+  }
+  favicon.href = require('./logo.png');
+
   const existing = document.querySelector('script[data-tailwind-cdn]');
   if (!existing) {
     const s = document.createElement('script');
