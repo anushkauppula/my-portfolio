@@ -1,6 +1,6 @@
 import Section from "./Section";
 import profile from "../data/profile";
-import { Mail, Phone, Github, Linkedin, PenLine } from "lucide-react";
+import { Github, Linkedin, PenLine } from "lucide-react";
 
 export default function Contact() {
   return (

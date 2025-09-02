@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, PenLine } from "lucide-react";
+import { Github, Linkedin, PenLine } from "lucide-react";
 import profile from "../data/profile";
 
 export default function Footer() {
