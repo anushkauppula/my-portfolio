@@ -15,20 +15,22 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
-  <Navbar />
-  <ScrollToTop />
-        <main className="flex-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutMe />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/education" element={<Education />} />
-            <Route path="/achievements" element={<Achievements />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
+        <Navbar />
+        <ScrollToTop />
+        <div className="flex-1 flex flex-col">
+          <main className="flex-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 overflow-y-auto pb-24">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<AboutMe />} />
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/education" element={<Education />} />
+              <Route path="/achievements" element={<Achievements />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </main>
+        </div>
         <Footer />
       </div>
     </Router>

@@ -3,12 +3,12 @@ import profile from "../data/profile";
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-white/50 dark:bg-slate-900/40">
+    <footer className="fixed bottom-0 left-0 w-full border-t bg-white/50 z-50">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-slate-600 dark:text-slate-300">
+        <p className="text-sm text-slate-600">
           © {new Date().getFullYear()} Anushka Uppula. All rights reserved.
         </p>
-        <div className="flex items-center gap-4 text-slate-700 dark:text-slate-200">
+        <div className="flex items-center gap-4 text-slate-700">
           <a
             href={`mailto:${profile.email}`}
             className="hover:text-blue-700 transition"
@@ -29,7 +29,7 @@ export default function Footer() {
             href={profile.links.github}
             target="_blank"
             rel="noreferrer"
-            className="hover:text-slate-900 dark:hover:text-white transition"
+            className="hover:text-slate-900 transition"
             aria-label="GitHub"
           >
             <Github size={20} />
@@ -38,7 +38,7 @@ export default function Footer() {
             href={profile.links.medium}
             target="_blank"
             rel="noreferrer"
-            className="hover:text-purple-600 transition"
+            className="hover:text-blue-700 transition"
             aria-label="Medium"
           >
             <PenLine size={20} />
