@@ -7,15 +7,8 @@ export default function Contact() {
     <Section title="Contact" subtitle="Let’s build something great together.">
       <div className="grid sm:grid-cols-2 gap-6">
         <div className="rounded-2xl border p-5 bg-white shadow-sm space-y-3">
-          <a
-            href={`mailto:${profile.email}`}
-            className="flex items-center gap-3 hover:underline"
-          >
-            <Mail /> {profile.email}
-          </a>
-          <p className="flex items-center gap-3">
-            <Phone /> {profile.phone}
-          </p>
+          {/* Email removed as requested */}
+
         </div>
 
         <div className="rounded-2xl border p-5 bg-white shadow-sm space-y-3">

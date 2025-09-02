@@ -4,8 +4,7 @@ const profile: Profile = {
   name: "Anushka",
   role: "Software Engineer skilled in .NET development and AI innovation, delivering business-ready applications.",
   location: "Maryville, MO",
-  email: "anushkauppula95@gmail.com",
-  phone: "+1-206-886-6609",
+  // email: "anushkauppula95@gmail.com",
   links: {
     linkedin: "https://www.linkedin.com/in/anushka-uppula-296ba872/",
     github: "https://github.com/anushkauppula",

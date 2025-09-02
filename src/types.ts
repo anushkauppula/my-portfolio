@@ -24,8 +24,6 @@ export interface Profile {
   name: string;
   role: string;
   location: string;
-  email: string;
-  phone: string;
   links: {
     linkedin: string;
     github: string;

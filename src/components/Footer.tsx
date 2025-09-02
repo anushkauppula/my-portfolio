@@ -10,13 +10,6 @@ export default function Footer() {
         </p>
         <div className="flex items-center gap-4 text-slate-700">
           <a
-            href={`mailto:${profile.email}`}
-            className="hover:text-blue-700 transition"
-            aria-label="Email"
-          >
-            <Mail size={20} />
-          </a>
-          <a
             href={profile.links.linkedin}
             target="_blank"
             rel="noreferrer"
