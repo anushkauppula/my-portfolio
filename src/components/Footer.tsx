@@ -3,7 +3,7 @@ import profile from "../data/profile";
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 w-full border-t bg-white/50 z-50">
+  <footer className="fixed bottom-0 left-0 w-full border-t bg-white z-50">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-slate-600">
           © {new Date().getFullYear()} Anushka Uppula. All rights reserved.
