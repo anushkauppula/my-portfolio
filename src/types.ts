@@ -4,6 +4,7 @@ export interface Job {
   location?: string;
   date: string;
   bullets: string[];
+  stack?: string[];
 }
 
 export interface Project {
@@ -34,10 +35,6 @@ export interface Profile {
   experience: Job[];
   projects: Project[];
   skills: Record<string, string[]>;
-  leadership: string[];
-  impact: string[];
-  awards: string[];
-  presentations: string[];
   education: Education[];
   achievements?: {
     leadershipImpact: Array<{

@@ -41,9 +41,9 @@ export default function Projects() {
         {filtered.map((p, i) => (
           <article
             key={i}
-            className="bg-gradient-to-br from-green-50 via-blue-50 to-slate-100 border border-green-200 rounded-2xl shadow-lg p-6 flex flex-col h-full"
+            className="bg-gradient-to-br from-blue-50 via-purple-50 to-slate-100 border border-blue-200 rounded-2xl shadow-lg p-6 flex flex-col h-full"
           >
-            <h3 className="text-xl font-bold text-green-700 mb-2">{p.name}</h3>
+            <h3 className="text-xl font-extrabold text-blue-700 mb-2">{p.name}</h3>
             <ul className="mt-2 list-disc list-inside space-y-1 text-slate-700">
               {p.bullets.map((b, j) => (
                 <li key={j}>{b}</li>

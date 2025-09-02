@@ -24,6 +24,15 @@ export default function Experience() {
                 <li key={j}>{b}</li>
               ))}
             </ul>
+            {job.stack && job.stack.length > 0 && (
+              <div className="mt-4 flex flex-wrap gap-2">
+                {job.stack.map((tech: string) => (
+                  <span key={tech} className="bg-gradient-to-br from-pink-50 via-purple-50 to-slate-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold shadow border border-purple-200">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            )}
           </article>
         ))}
       </div>

@@ -28,11 +28,11 @@ export default function Achievements() {
             ))}
           </div>
         </div>
-        {/* Achievements & Honors */}
+        {/* Awards & Honors */}
         <div className="bg-gradient-to-br from-yellow-50 via-pink-50 to-slate-100 border border-yellow-200 rounded-2xl shadow-lg p-6">
           <div className="flex items-center gap-2 mb-3">
             <Award className="text-yellow-500" size={28} />
-            <h2 className="text-xl font-extrabold text-yellow-700 tracking-tight">Achievements & Honors</h2>
+            <h2 className="text-xl font-extrabold text-yellow-700 tracking-tight">Awards & Honors</h2>
           </div>
           <div className="space-y-4">
             {achievements?.honors.map((item) => (
