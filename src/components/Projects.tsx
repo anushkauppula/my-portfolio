@@ -37,7 +37,7 @@ export default function Projects() {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
         {filtered.map((p, i) => (
           <article
             key={i}

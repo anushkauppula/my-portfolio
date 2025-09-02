@@ -9,12 +9,14 @@ import Education from "./components/Education";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100">
-        <Navbar />
+      <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
+  <Navbar />
+  <ScrollToTop />
         <main className="flex-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Routes>
             <Route path="/" element={<Home />} />

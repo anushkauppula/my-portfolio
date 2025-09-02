@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="min-h-screen w-full flex flex-col sm:flex-row">
       {/* Left: Full image */}
-      <div className="sm:w-1/2 w-full h-72 sm:h-screen flex items-center justify-center bg-slate-100">
+      <div className="sm:w-1/2 w-full h-56 sm:h-screen flex items-center justify-center bg-slate-100">
         <img
           src={require('../photo.jpeg')}
           alt="Profile"
@@ -12,11 +12,11 @@ export default function Home() {
         />
       </div>
       {/* Right: Centered text */}
-      <div className="sm:w-1/2 w-full flex flex-col items-center justify-center px-6 py-16 sm:py-0 bg-white">
-        <h1 className="text-4xl sm:text-6xl font-extrabold text-slate-900 mb-6 text-center">
+      <div className="sm:w-1/2 w-full flex flex-col items-center justify-center px-4 py-10 sm:px-6 sm:py-0 bg-white">
+        <h1 className="text-3xl sm:text-6xl font-extrabold text-slate-900 mb-6 text-center">
           Hey,<br />I am {profile.name}
         </h1>
-        <p className="text-lg sm:text-xl text-slate-500 text-center mt-2">
+        <p className="text-base sm:text-xl text-slate-500 text-center mt-2">
           {profile.role}
         </p>
       </div>

@@ -8,7 +8,7 @@ export default function Achievements() {
   const { achievements } = profile;
   return (
     <Section title="Achievements">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
         {/* Leadership & Impact */}
         <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-slate-100 border border-blue-200 rounded-2xl shadow-lg p-6">
           <div className="flex items-center gap-2 mb-3">

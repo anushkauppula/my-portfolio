@@ -21,7 +21,7 @@ function formatKey(key: string) {
 export default function Skills() {
   return (
     <Section title="Skills">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {Object.entries(profile.skills).map(([key, arr]) => (
           Array.isArray(arr) ? (
             <div key={key} className="bg-white border border-slate-200 rounded-2xl shadow-sm p-6 flex flex-col">

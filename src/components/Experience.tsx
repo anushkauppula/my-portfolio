@@ -7,7 +7,7 @@ import { Briefcase } from "lucide-react";
 export default function Experience() {
   return (
     <Section title="Experience">
-      <div className="flex flex-col gap-8">
+  <div className="flex flex-col gap-6 sm:gap-8">
         {profile.experience.map((job, i) => (
           <article
             key={i}
