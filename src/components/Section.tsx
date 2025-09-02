@@ -17,7 +17,7 @@ export default function Section({ title, subtitle, children }: Props) {
         className="space-y-4"
       >
         {title && (
-          <header>
+          <header className="text-center">
             <h2 className="text-2xl sm:text-3xl font-bold">{title}</h2>
             {subtitle && <p className="text-slate-600 mt-1">{subtitle}</p>}
           </header>
